@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI addClass Example</title>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+      .element {
+        width: 150px;
+        height: 30px;
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#Target").animate({
+            backgroundColor: "gray",
+            color: "white",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="Target" class="element">Hello World!!</div>
+    <br />
+    <button id="btn">Click Me</button>
+  </body>
+</html>
